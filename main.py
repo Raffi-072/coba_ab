@@ -10,7 +10,7 @@ from io import BytesIO
 st.title('Diagnosis Covid-19')
 
 
-class FileUpload(object):
+def main():
     IMM_SIZE = 224
     lab = {'Covid': 0, 'Viral Pneumonia': 1, 'Normal': 2}
     uploaded_file = st.file_uploader("Choose a file")
@@ -81,5 +81,4 @@ class FileUpload(object):
         st.text(diagnosis(uploaded_file))
 
 if __name__ == "__main__":
-    helper = FileUpload()
-    helper.run()
+    main()
