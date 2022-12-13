@@ -1,4 +1,0 @@
-mahotas
-streamlit
-numpy
-scikit-learn
