@@ -7,7 +7,7 @@ import pickle
 from io import BytesIO
 
 
-st.title('Diagnosis Covid-19')
+st.title('X-Ray Diagnosis Covid-19')
 
 
 def main():
