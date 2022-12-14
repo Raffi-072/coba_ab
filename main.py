@@ -72,7 +72,12 @@ def main():
         # Find the name of the diagnosis
         ## YOUR CODE GOES HERE##
 
-        diag = {i for i in lab if lab[i] == predictions}
+        undf = "undefined"
+        diag = {i for i in lab} 
+        if lab[i]==predictions:
+            return diag
+        else:
+            return undf
 
         return diag
 
